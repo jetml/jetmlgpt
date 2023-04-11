@@ -19,7 +19,11 @@ jupyter serverextension enable --py jetmlgpt
 
 ## Usage
 
-First, set your OpenAI API key in the environment variable `OPENAI_API_KEY` to activate the extension.
+Before using JetMLGPT, you'll need to sign up for an OpenAI API key. To do so, please visit [https://platform.openai.com/account/api-keys](https://platform.openai.com/account/api-keys) and follow the instructions to create an account and obtain your API key.
+
+Please note that to use the GPT-4 model with JetMLGPT, you may need to request beta access from OpenAI. To join the waitlist for the GPT-4 API, visit [https://openai.com/waitlist/gpt-4-api](https://openai.com/waitlist/gpt-4-api) and sign up. Once you've been granted access, you'll be able to select and use the GPT-4 model within the JetMLGPT extension.
+
+Next, set your OpenAI API key in the environment variable `OPENAI_API_KEY` to activate the extension.
 
 Then, launch your Jupyter notebook, and you'll find the following buttons:
 

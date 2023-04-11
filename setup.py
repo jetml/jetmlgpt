@@ -9,7 +9,7 @@ setuptools.setup(
     version="0.1.3",
     author="Nick M.",
     author_email="nick@jetml.com",
-    description="A Jupyter extension for auto-completing, commenting, and bebugging code in Jupyter notebooks using ChatGPT and GPT4. Set your OpenAI API key in the environment variable OPENAI_API_KEY to activate.",
+    description="https://github.com/jetml/jetmlgpt - A Jupyter extension for auto-completing, commenting, and bebugging code in Jupyter notebooks using ChatGPT and GPT4. Set your OpenAI API key in the environment variable OPENAI_API_KEY to activate. ",
     long_description=long_description,
     long_description_content_type="text/markdown",    
     url="https://github.com/yourusername/jetmlgpt",

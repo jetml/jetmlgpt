@@ -25,6 +25,20 @@ Please note that to use the GPT-4 model with JetMLGPT, you may need to request b
 
 Next, set your OpenAI API key in the environment variable `OPENAI_API_KEY` to activate the extension.
 
+### Running on JetML platform
+
+JetML platform has the JetMLGPT extension preinstalled. When setting up your workflow on the JetML platform, include the `OPENAI_API_KEY` as an environment variable. This will enable the extension in your Jupyter notebook instances.
+
+### Running locally with Docker
+
+To run Jupyter notebook with the JetMLGPT extension locally using Docker, execute the following command:
+
+```
+docker run -p 8888:8888 -it -e 'OPENAI_API_KEY=api_key_value' -e 'TOKEN=123' -v /local/folder:/notebooks/ jetml/images:jupyter
+```
+
+Replace `api_key_value` with your OpenAI API key and `/local/folder` with your desired local folder for mounting notebooks.
+
 Then, launch your Jupyter notebook, and you'll find the following buttons:
 
 1. "Run Jupyter Chat": Use this button to auto-complete the code in the selected cell.
@@ -46,6 +60,6 @@ You can also check out the source code and contribute to the project on GitHub: 
 
 JetMLGPT is licensed under the Apache Software License. For more information, please refer to the [LICENSE](LICENSE) file.
 
-## Important
+## Privacy and Data Handling
 
-Do not share sensitive notebooks and data with OpenAI.
+When using JetMLGPT, be cautious about sharing sensitive information, such as personally identifiable information (PII), intellectual property, trade secrets, or any other confidential material. OpenAI's API processes and stores the data sent to it. To avoid potential data breaches or misuse, do not share sensitive notebooks and data with OpenAI. For more information, consult OpenAI's [data usage policy](https://platform.openai.com/docs/data-usage-policies).
